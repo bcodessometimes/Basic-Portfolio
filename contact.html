@@ -8,26 +8,41 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div id="name">
-            Rebecca Potter
-        </div>
-        <div id="about">
-            About
-        </div>
-        <div id="portfolio"> 
-            Portfolio
-        </div>
-        <div id="contact">
-            Contact
-        </div>
-    </header>
-    <container id="contactcontainer">
-        <h1>Contact</h1>
-        <p>Name</p>
-        <p>Email</p>
-        <p>Message</p>
-    </container>
-    <footer></footer>
+    <header class="topnav">
+            <div class="headerwrapper">
+              <div id="name">
+                    Rebecca Potter
+             </div>
+                 <a href="index.html" class="about">
+                    About
+                  </a>
+                 <a href="portfolio.html" class="portfolio"> 
+                    Portfolio
+                </a>
+                <a href="contact.html" class="contact">
+                    Contact
+                </a>
+                </div>
+      </header>
+    <div class="body">
+        <h1 class="header">Contact</h1>
+        <div class="container">
+                <form action="action_page.php">
+              
+                  <label for="fname">Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="John Smith">
+              
+                  <label for="lname">Email</label>
+                  <input type="text" id="lname" name="lastname" placeholder="example@gmail.com">
+            
+                  <label for="subject">Message</label>
+                  <textarea id="subject" name="subject" style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+    </div>
+    <footer class="footer"> Copyright &copy; </footer>
 </body>
 </html>
